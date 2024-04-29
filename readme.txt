@@ -6,6 +6,40 @@
 
 
 
+任何人都可以向我们提出 pull request .
+操作方式如下：
+
+--> 如果你已经被加入到了协作者列表中的话，请按下面的步聚提出 pull request :
+git clone git@github.com:evil-trap/trapcompany.git
+git checkout -b <你将来要提交PR的分支名称，比如：my-feature>
+git diff
+git add <changed_files>
+git commit -m "提交描述，尽量做到言简意赅，以免被repo误认为是垃圾提交"
+git push origin my-feature
+
+----> 如果提交时发现 main 分支有了新的commit更新，就多做这几步：
+git checkout main
+git pull origin master
+git checkout my-feature
+git rebase main
+有可能会出现 rebase conflict
+这时需要一个个手动选择保留哪一行
+git push -f origin my-feature
+
+
+
+--> 如果你还没有被加入到协作者列表中的话，就用下面的方式提出 pull request :
+用浏览器打开存储库网址
+https://github.com/evil-trap/trapcompany
+在右上部找到 Fork 按钮就点击
+这样做的目的是为了让你获得一个有完整权限的存储库。所以你可以想怎么改就怎么改。
+改完之后，先推回(push)到你自己的存储库中。就是你刚才fork回来的那个有完整权限的repo中
+然后就可以在你自己的github账户中找到那个fork回来的repo，你会在绿色的 <>Code 按钮下边靠左一点看到一个 Contribute 按钮，点它你就会看到绿色的 Open pull request 按钮了，点它就能提出 PR 了
+如果我们觉得可以合并进main的话，你就会在我们做完merge后收到邮件通知和github的站内通知。
+之后你可以选择删掉你fork的repo,这样就不会在下次提交PR时导致分不清的情况了。同时这也会减掉我们主repo的Fork的数值，所以我们并不是以些来增加fork量的。
+
+
+
 
 
 
