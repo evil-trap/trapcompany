@@ -36,7 +36,7 @@ https://github.com/evil-trap/trapcompany
 改完之后，先推回(push)到你自己的存储库中。就是你刚才fork回来的那个有完整权限的repo中
 然后就可以在你自己的github账户中找到那个fork回来的repo，你会在绿色的 <>Code 按钮下边靠左一点看到一个 Contribute 按钮，点它你就会看到绿色的 Open pull request 按钮了，点它就能提出 PR 了
 如果我们觉得可以合并进main的话，你就会在我们做完merge后收到邮件通知和github的站内通知。
-之后你可以选择删掉你fork的repo,这样就不会在下次提交PR时导致分不清的情况了。同时这也会减掉我们主repo的Fork的数值，所以我们并不是以些来增加fork量的。
+之后你可以选择删掉你fork的repo,这样就不会在下次提交PR时导致分不清的情况了。同时这也会减掉我们主repo的Fork的数值，所以我们并不是以此来增加fork量的。
 
 
 
